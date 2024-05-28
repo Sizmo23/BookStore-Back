@@ -12,5 +12,9 @@ steps:
 
 - script: |
     npm install
-    npm run build
-  displayName: 'npm install and build'
+    npm audit
+  displayName: 'Install dependencies and audit'
+
+- script: |
+    npm start
+  displayName: 'Start Application'
